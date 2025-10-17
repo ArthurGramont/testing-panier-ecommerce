@@ -49,15 +49,6 @@ Vous devez produire :
 3. Un code final refactorisé, lisible et cohérent.
 4. Expliquez en quelques lignes comment vous intégreriez ces tests dans un pipeline CI/CD.
 
----
+----------------- Réponses -----------------
 
-### 🧾 **Barème récapitulatif**
-
-| Partie    | Description             |  Points |
-| :-------- | :---------------------- | :-----: |
-| 1         | Compréhension rapide    |    15   |
-| 2.1       | Rédaction des tests     |    25   |
-| 2.2       | Implémentation minimale |    25   |
-| 2.3       | Refactoring             |    25   |
-| 2.4       | Intégration continue    |    10   |
-| **Total** |                         | **100** |
+4. Pour intégrer ces tests dans un pipeline CI/CD, j'ajouterais une étape dédiée aux tests unitaires dans le processus de build. Chaque fois qu'une modification est poussée dans le dépôt, le pipeline exécuterait automatiquement tous les tests unitaires. Si tous les tests passent, le build continuerait vers les étapes suivantes, telles que le déploiement. En cas d'échec d'un test, le pipeline s'arrêterait et notifierait l'équipe de développement pour corriger les erreurs avant de poursuivre. Cela garantit que le code déployé est toujours testé et fiable.
