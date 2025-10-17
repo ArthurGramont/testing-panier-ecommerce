@@ -7,7 +7,9 @@
 ----------------- Réponses -----------------
 
 **1.** Le TDD (Test-Driven Development) est une approche de développement logiciel où les tests sont écrits avant le code de production. Les trois étapes clés sont : écrire un test qui échoue, écrire le code minimum pour faire passer le test, puis refactoriser le code tout en s'assurant que les tests passent toujours.
+
 **2.** Deux avantages concrets du TDD sont : une meilleure conception du code grâce à la réflexion préalable sur les tests, et une réduction des bugs car le code est continuellement testé pendant le développement.
+
 **3.** Un stub est un objet qui fournit des réponses prédéfinies aux appels de méthodes, tandis qu'un fake est une implémentation simplifiée mais fonctionnelle d'une interface. Par exemple, un stub pourrait retourner une valeur fixe pour une méthode de calcul, tandis qu'un fake pourrait être une base de données en mémoire utilisée pour les tests. En plus de cela, un fake contient des informations fausses mais plausibles pour simuler un comportement réel. Tandis qu'un stub est principalement utilisé pour isoler le code testé en fournissant des réponses spécifiques.
 
 ---
