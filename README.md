@@ -1,10 +1,3 @@
-## 🧩 **Examen – Développement piloté par les tests (TDD)**
-
-**Durée :** 1 heure
-**Total :** 100 points
-
----
-
 ### 🧠 **Partie 1 – Compréhension rapide (15 points, ~10 min)**
 
 **1.** En une ou deux phrases, expliquez le principe du TDD et ses trois étapes clés. *(5 pts)*
