@@ -22,24 +22,27 @@ describe('Cart', () => {
 
   test('applique une réduction de 10 % lorsque le total dépasse 100€', () => {
     cart.add(createProduct('expensive', 60));
-    cart.add(createProduct('expensive2', 50)); // total 110
-    // discounted total = 110 * 0.9 = 99
+    cart.add(createProduct('expensive2', 50));
     expect(cart.total()).toBe(99);
+  });
+  
+  test('erreur quand one ajoute un produit négatif', () => {
+    expect(() => cart.add(createProduct('bad', -5))).toThrow();
   });
 
   test('n\'applique pas de réduction lorsque le total est égal à 100€', () => {
     cart.add(createProduct('a', 40));
-    cart.add(createProduct('b', 60)); // total 100
+    cart.add(createProduct('b', 60));
     expect(cart.total()).toBe(100);
   });
 
   test('arrondit correctement à deux décimales', () => {
     cart.add(createProduct('item1', 33.333));
     cart.add(createProduct('item2', 33.333));
-    cart.add(createProduct('item3', 33.334)); // sum 100.0
+    cart.add(createProduct('item3', 33.334));
     expect(cart.total()).toBe(100);
 
-    cart.add(createProduct('tiny', 0.005)); // now 100.005 -> discount applies -> 90.0045 -> rounds to 90.00
+    cart.add(createProduct('tiny', 0.005));
     expect(cart.total()).toBe(90);
   });
 });
